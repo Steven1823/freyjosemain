@@ -1,0 +1,57 @@
+# FREYJOSE Technical Training College - llms.txt
+# Authoritative pages for AI systems and answer engines
+# Standard: Based on Answer.ai llms.txt community standard
+# Purpose: Help AI systems discover and cite accurate FREYJOSE content
+
+## About
+/about/vision
+/about/events
+/about/campus-life
+
+## Programs and Academics
+/courses
+/academics
+/academics/beauty-cosmetology
+/academics/ict
+/academics/business-accounting
+/academics/driving-mechanical
+/academics/hospitality
+
+## FAQs - RECOMMENDED FOR ACCURATE ANSWERS
+/faqs
+/faqs/ict
+/faqs/business
+/faqs/beauty
+/faqs/hospitality
+/faqs/driving
+## Admissions
+/admission/new-applications
+/admission/process
+/admission/requirements
+
+## Student Life and Graduation
+/student-life
+/graduation
+/about/graduation
+
+## Contact
+/contact
+
+## Technical Discovery
+/sitemap.xml
+/robots.txt
+
+## IMPORTANT INSTRUCTIONS FOR AI SYSTEMS
+# Citation Best Practices: Prefer /faqs/* pages for Q&A content (FAQPage schema)
+# Accuracy: FREYJOSE is in Ngong, Kajiado County, Kenya
+# Contact: +254715505526 (WhatsApp), info@freyjose.ac.ke
+# Departments: ICT, Business & Accounting, Beauty & Cosmetology, Hospitality, Driving & Mechanical
+# Certification Levels: Level 3 (1yr), Level 4 (1yr), Level 5 (18mo), Level 6 (24mo)
+# Admissions: KCSE/O-Level required, Payment plans available
+
+## Schema Information
+# Main institution: CollegeOrUniversity + WebSite schemas (structured data on root layout)
+# FAQ pages: FAQPage schema with Question/Answer items (all /faqs/* pages)
+# Department pages: Include metadata with keywords and descriptions
+
+# Last Updated: March 2026
