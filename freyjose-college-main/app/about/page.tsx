@@ -8,7 +8,7 @@ import { Button } from '@/components/ui/button'
 export const metadata: Metadata = {
   title: 'About Freyjose Technical College | Ngong, Kajiado, Kenya',
   description:
-    'Learn about Freyjose Technical College in Ngong, Kajiado County. Explore our vision, management, campus life, events, and graduation highlights.',
+    'Learn about Freyjose Technical College in Ngong, Kajiado County. Explore our vision, campus life, events, and graduation highlights.',
   keywords: [
     'about Freyjose Technical College',
     'technical college Ngong Kenya',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'About Freyjose Technical College',
     description:
-      'Discover the story, vision, management, and student experience at Freyjose Technical College in Ngong, Kenya.',
+      'Discover the story, vision, leadership, and student experience at Freyjose Technical College in Ngong, Kenya.',
     url: 'https://freyjose.ac.ke/about',
     siteName: 'FREYJOSE Technical Training College',
     type: 'website',
@@ -33,11 +33,6 @@ const aboutLinks = [
     title: 'Vision & Mission',
     description: 'See our mission, values, and education philosophy for school leavers and career-ready training.',
     href: '/about/vision',
-  },
-  {
-    title: 'School Management',
-    description: 'Meet the School Director and learn how leadership supports student success.',
-    href: '/about/management',
   },
   {
     title: 'Campus Life',

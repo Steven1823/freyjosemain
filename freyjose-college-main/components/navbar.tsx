@@ -42,7 +42,6 @@ export function Navbar() {
 
   const aboutDropdownItems = [
     { label: 'Our Vision & Mission', href: '/about/vision' },
-    { label: 'School Management', href: '/about/management' },
     { label: 'Events', href: '/about/events' },
     { label: 'Campus Life', href: '/about/campus-life' },
     { label: 'Graduation', href: '/about/graduation' },
