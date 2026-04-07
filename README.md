@@ -71,8 +71,9 @@ If `OPENAI_API_KEY` is not set, the assistant still works using internal fallbac
 ## Scripts
 
 - `pnpm dev` start dev server
-- `pnpm build` build production app for OpenNext/Cloudflare
+- `pnpm build` build production app with Next.js only
 - `pnpm build:next` build production app with Next.js only
+- `pnpm build:cf` build production app for OpenNext/Cloudflare
 - `pnpm preview` build with OpenNext and preview in Workers runtime
 - `pnpm run deploy` build with OpenNext and deploy to Cloudflare Workers
 - `pnpm run upload` build with OpenNext and upload new Worker version
