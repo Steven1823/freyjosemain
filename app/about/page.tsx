@@ -56,7 +56,7 @@ export default function AboutPage() {
     <main className="w-full">
       <Navbar />
 
-      <section className="w-full bg-gradient-to-b from-blue-50 to-white pt-44 pb-20 sm:pt-48 sm:pb-20 md:py-20">
+      <section className="w-full bg-gradient-to-b from-blue-50 to-white pt-36 pb-16 sm:pt-40 sm:pb-20 md:py-20">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-blue-900 mb-4">About Freyjose Technical College</h1>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto">

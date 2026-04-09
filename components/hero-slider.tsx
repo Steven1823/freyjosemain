@@ -109,7 +109,7 @@ export function HeroSlider() {
 
   return (
     <div
-      className="relative w-full min-h-[100svh] overflow-hidden bg-black"
+      className="relative w-full min-h-[100svh] overflow-hidden bg-slate-950"
       onTouchStart={onTouchStart}
       onTouchMove={onTouchMove}
       onTouchEnd={onTouchEnd}
@@ -134,20 +134,20 @@ export function HeroSlider() {
               quality={index === 0 ? 96 : 90}
             />
             {/* Soft gradient overlay keeps text readable while preserving photo detail */}
-            <div className="absolute inset-0 bg-gradient-to-b from-black/35 via-black/20 to-black/45" />
+            <div className="absolute inset-0 bg-gradient-to-b from-slate-950/40 via-slate-900/25 to-slate-950/60" />
 
             {/* Content */}
             <div className="absolute inset-0 flex items-center justify-center pt-32 sm:pt-36 md:pt-32">
               <div className="text-center text-white max-w-4xl px-4 sm:px-6">
-                <h2 className="text-sm sm:text-xl md:text-3xl font-extrabold mb-1 text-red-300 tracking-wide">FREYJOSE TECHNICAL TRAINING COLLEGE</h2>
-                <h3 className="text-[11px] md:text-base font-semibold mb-4 text-gray-100 tracking-widest">CREATE • INNOVATE • ELEVATE</h3>
-                <div className="inline-block bg-red-600 text-white px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold mb-3">
+                <h2 className="text-xs sm:text-lg md:text-2xl font-semibold mb-2 tracking-[0.22em] text-white/85 uppercase">Freyjose Technical Training College</h2>
+                <h3 className="text-[10px] md:text-sm font-medium mb-5 text-white/70 tracking-[0.3em] uppercase">Practical learning for real careers</h3>
+                <div className="inline-block rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs sm:text-sm font-medium text-white/90 backdrop-blur-sm mb-4">
                   {slide.badge}
                 </div>
-                <h1 className="text-2xl sm:text-4xl md:text-6xl font-bold mb-3 leading-tight drop-shadow-sm">
+                <h1 className="text-3xl sm:text-5xl md:text-6xl font-semibold mb-4 leading-tight tracking-tight drop-shadow-sm">
                   {slide.heading}
                 </h1>
-                <p className="text-sm sm:text-base md:text-2xl mb-6 text-gray-50 max-w-3xl mx-auto">
+                <p className="text-sm sm:text-base md:text-xl mb-7 text-white/85 max-w-3xl mx-auto leading-relaxed">
                   {slide.description}
                 </p>
                 <div className="flex gap-3 justify-center flex-wrap">
@@ -155,10 +155,10 @@ export function HeroSlider() {
                     <Button
                       key={btnIndex}
                       onClick={() => handleButtonClick(btn.action)}
-                      className={`px-5 py-2.5 sm:px-8 sm:py-3 text-sm sm:text-lg font-semibold transition-all ${
+                      className={`px-5 py-2.5 sm:px-8 sm:py-3 text-sm sm:text-base font-semibold transition-all rounded-full ${
                         btn.style === 'primary'
-                          ? 'bg-red-600 text-white hover:bg-red-700'
-                          : 'bg-white text-blue-900 hover:bg-gray-100'
+                          ? 'bg-white text-slate-900 hover:bg-slate-100'
+                          : 'border border-white/25 bg-white/10 text-white hover:bg-white/15'
                       }`}
                     >
                       {btn.text}
@@ -174,14 +174,14 @@ export function HeroSlider() {
       {/* Navigation Arrows */}
       <button
         onClick={prevSlide}
-        className="absolute left-3 sm:left-4 top-1/2 -translate-y-1/2 z-20 bg-white/30 hover:bg-white/50 text-white p-2 sm:p-3 rounded-full transition-all hidden sm:block"
+        className="absolute left-3 sm:left-4 top-1/2 -translate-y-1/2 z-20 bg-white/10 hover:bg-white/20 text-white p-2 sm:p-3 rounded-full transition-all hidden sm:block border border-white/15 backdrop-blur-sm"
         aria-label="Previous slide"
       >
         <ChevronLeft size={24} />
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-3 sm:right-4 top-1/2 -translate-y-1/2 z-20 bg-white/30 hover:bg-white/50 text-white p-2 sm:p-3 rounded-full transition-all hidden sm:block"
+        className="absolute right-3 sm:right-4 top-1/2 -translate-y-1/2 z-20 bg-white/10 hover:bg-white/20 text-white p-2 sm:p-3 rounded-full transition-all hidden sm:block border border-white/15 backdrop-blur-sm"
         aria-label="Next slide"
       >
         <ChevronRight size={24} />
@@ -194,7 +194,7 @@ export function HeroSlider() {
             key={index}
             onClick={() => goToSlide(index)}
             className={`w-3 h-3 rounded-full transition-all ${
-              index === currentSlide ? 'bg-white w-8' : 'bg-white/50'
+              index === currentSlide ? 'bg-white w-8' : 'bg-white/30'
             }`}
             aria-label={`Go to slide ${index + 1}`}
           />

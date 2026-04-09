@@ -59,7 +59,7 @@ export default function ContactPage() {
       <Navbar />
 
       {/* Hero */}
-      <section className="w-full bg-gradient-to-br from-purple-700 to-red-600 pt-44 pb-20 sm:pt-48 sm:pb-20 md:py-20">
+      <section className="w-full bg-gradient-to-br from-purple-700 to-red-600 pt-36 pb-16 sm:pt-40 sm:pb-20 md:py-20">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <nav className="flex items-center gap-2 text-purple-200 text-sm mb-6">
             <Link href="/" className="hover:text-white transition-colors">Home</Link>

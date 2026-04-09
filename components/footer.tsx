@@ -24,7 +24,7 @@ export function Footer() {
   ]
 
   return (
-    <footer className="w-full bg-purple-600 text-white">
+    <footer className="w-full bg-slate-950 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="py-16">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
@@ -48,13 +48,13 @@ export function Footer() {
             </div>
 
             <div>
-              <h4 className="font-semibold mb-4 text-red-300">Quick Links</h4>
+              <h4 className="font-semibold mb-4 text-white/90">Quick Links</h4>
               <ul className="space-y-2">
                 {quickLinks.map((link) => (
                   <li key={link.label}>
                     <a
                       href={link.href}
-                      className="text-white/80 hover:text-red-300 transition-colors text-sm"
+                      className="text-white/75 hover:text-white transition-colors text-sm"
                     >
                       {link.label}
                     </a>
@@ -64,23 +64,23 @@ export function Footer() {
             </div>
 
             <div>
-              <h4 className="font-semibold mb-4 text-red-300">Contact Info</h4>
-              <div className="space-y-2 text-sm text-white/80">
+              <h4 className="font-semibold mb-4 text-white/90">Contact Info</h4>
+              <div className="space-y-2 text-sm text-white/75">
                 <p>Ngong, Kajiado County, Kenya</p>
-                <a href="tel:+254715505526" className="hover:text-red-300 transition-colors block">
+                <a href="tel:+254715505526" className="hover:text-white transition-colors block">
                   0715 505 526
                 </a>
-                <a href="tel:+254732010366" className="hover:text-red-300 transition-colors block">
+                <a href="tel:+254732010366" className="hover:text-white transition-colors block">
                   0732 010 366
                 </a>
-                <a href="mailto:info@freyjose.ac.ke" className="hover:text-red-300 transition-colors block">
+                <a href="mailto:info@freyjose.ac.ke" className="hover:text-white transition-colors block">
                   info@freyjose.ac.ke
                 </a>
               </div>
             </div>
 
             <div>
-              <h4 className="font-semibold mb-4 text-red-300">Follow Us</h4>
+              <h4 className="font-semibold mb-4 text-white/90">Follow Us</h4>
               <div className="flex gap-3">
                 {socialLinks.map((social, index) => {
                   const Icon = social.icon
@@ -88,7 +88,7 @@ export function Footer() {
                     <a
                       key={index}
                       href={social.href}
-                      className="w-10 h-10 bg-white/20 hover:bg-red-600 rounded-lg flex items-center justify-center transition-colors text-white"
+                      className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-colors text-white"
                     >
                       <Icon size={18} />
                     </a>
@@ -96,22 +96,22 @@ export function Footer() {
                 })}
               </div>
               <div className="mt-4 space-y-2">
-                <a href="/admission/new-applications" className="block text-sm font-semibold text-white hover:text-red-300 transition-colors">
+                <a href="/admission/new-applications" className="block text-sm font-semibold text-white hover:text-white/80 transition-colors">
                   Apply Now →
                 </a>
               </div>
             </div>
           </div>
 
-          <Separator className="my-8 bg-white/20" />
+          <Separator className="my-8 bg-white/10" />
 
-          <div className="flex flex-col sm:flex-row justify-between items-center text-sm text-white/70">
+          <div className="flex flex-col sm:flex-row justify-between items-center text-sm text-white/60">
             <p>&copy; {currentYear} FREYJOSE Technical Training College. All rights reserved.</p>
             <div className="flex gap-6 mt-4 sm:mt-0">
-              <a href="#" className="hover:text-red-300 transition-colors">
+              <a href="#" className="hover:text-white transition-colors">
                 Privacy Policy
               </a>
-              <a href="#" className="hover:text-red-300 transition-colors">
+              <a href="#" className="hover:text-white transition-colors">
                 Terms of Service
               </a>
             </div>

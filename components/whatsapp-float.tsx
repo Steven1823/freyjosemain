@@ -15,7 +15,7 @@ export function WhatsAppFloat() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chat on WhatsApp"
-      className="fixed bottom-5 right-4 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-green-500 shadow-lg transition-colors hover:bg-green-600 sm:bottom-6 sm:right-6"
+      className="fixed bottom-5 right-4 z-40 hidden h-14 w-14 items-center justify-center rounded-full bg-green-500 shadow-lg transition-colors hover:bg-green-600 sm:bottom-6 sm:right-6 sm:flex"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

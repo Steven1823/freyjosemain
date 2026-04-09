@@ -96,7 +96,7 @@ export default function RequirementsPage() {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="w-full bg-gradient-to-b from-green-100 to-white pt-44 pb-20 sm:pt-48 sm:pb-20 md:py-20">
+      <section className="w-full bg-gradient-to-b from-green-100 to-white pt-36 pb-16 sm:pt-40 sm:pb-20 md:py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-green-600 mb-6">Requirements & FAQs</h1>
           <p className="text-lg text-gray-700 mb-8">Everything you need to know about applying</p>

@@ -89,10 +89,10 @@ export function Navbar() {
       {/* Main Navigation - Simple Clean Bar */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-lg border-b-4 border-blue-900">
         {/* Top Utility Bar */}
-        <div className="bg-blue-700 text-blue-100 border-b border-blue-500">
+        <div className="bg-slate-900 text-slate-100 border-b border-slate-700">
           <div className="mx-auto flex max-w-[1600px] items-center justify-between gap-3 px-4 py-2 text-xs sm:px-6">
             <div className="flex min-w-0 items-center gap-3 sm:gap-4">
-              <span className="hidden text-blue-50 font-semibold lg:inline">Any questions?</span>
+              <span className="hidden text-white/80 font-medium lg:inline">Any questions?</span>
               <a href="tel:+254715505526" className="inline-flex items-center gap-1.5 hover:text-white transition-colors whitespace-nowrap">
                 <Phone size={13} />
                 <span>0715 505 526</span>
@@ -103,7 +103,7 @@ export function Navbar() {
               </a>
             </div>
 
-            <div className="hidden lg:flex items-center gap-4 text-blue-100">
+            <div className="hidden lg:flex items-center gap-4 text-white/75">
               {topQuickLinks.map((item) => (
                 <a key={item.label} href={item.href} className="hover:text-white transition-colors whitespace-nowrap">
                   {item.label}
@@ -112,7 +112,7 @@ export function Navbar() {
             </div>
 
             <div className="hidden sm:flex items-center gap-1.5">
-              <span className="hidden sm:inline text-[11px] text-blue-200 mr-1">Follow us</span>
+              <span className="hidden sm:inline text-[11px] text-white/60 mr-1">Follow us</span>
               {topSocialLinks.map((social) => {
                 const Icon = social.icon
                 return (
@@ -120,7 +120,7 @@ export function Navbar() {
                     key={social.label}
                     href={social.href}
                     aria-label={social.label}
-                    className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-blue-600 hover:bg-blue-500 text-white transition-colors"
+                    className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors"
                   >
                     <Icon size={13} />
                   </a>
@@ -131,21 +131,21 @@ export function Navbar() {
         </div>
 
         {/* Red Announcement Strip */}
-        <div className="bg-red-600 text-white px-4 py-2 text-center text-sm font-semibold flex flex-wrap items-center justify-center gap-2 md:gap-4">
+        <div className="bg-white text-slate-900 px-4 py-2 text-center text-sm font-medium flex flex-wrap items-center justify-center gap-2 md:gap-4 border-b border-slate-200">
           <span className="text-xs sm:text-sm">
-            🎓 March 2026 Intake In Progress! —
-            <a href="tel:+254715505526" className="underline ml-1 hover:text-red-100">0715 505 526</a>
+            March 2026 Intake in progress.
+            <a href="tel:+254715505526" className="underline ml-1 hover:text-slate-700">0715 505 526</a>
           </span>
           <a
             href="/admission/new-applications"
-            className="bg-white text-red-600 font-bold px-3 py-1 rounded-full text-xs sm:text-sm hover:bg-red-50 transition-colors shrink-0"
+            className="bg-slate-900 text-white font-medium px-3 py-1 rounded-full text-xs sm:text-sm hover:bg-slate-800 transition-colors shrink-0"
           >
-            Apply Now →
+            Apply Now
           </a>
         </div>
         <div className="w-full">
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-3 px-4 lg:px-6 py-3 max-w-full">
+          <div className="hidden md:flex items-center gap-3 px-3 lg:px-4 py-3 max-w-[1600px] mx-auto">
             {/* Logo */}
             <a href="/" className="flex items-center flex-shrink-0 group">
               <Image
@@ -154,12 +154,12 @@ export function Navbar() {
                 width={320}
                 height={128}
                 priority
-                className="h-14 lg:h-16 xl:h-20 w-auto"
+                className="h-12 lg:h-14 xl:h-16 w-auto"
               />
             </a>
 
             {/* Navigation Items */}
-            <div className="flex min-w-0 flex-1 items-center gap-0 overflow-x-auto [scrollbar-width:thin]">
+            <div className="flex min-w-0 flex-1 items-center justify-center gap-1 overflow-hidden">
               {navItems.map((item) => (
                 <div key={item.label} className="relative group flex-shrink-0">
                   {item.hasDropdown ? (
@@ -176,14 +176,14 @@ export function Navbar() {
                         if (item.label === 'Academics') setAcademicsDropdownOpen(false)
                         if (item.label === 'FAQs') setFaqsDropdownOpen(false)
                       }}
-                      className="px-3 xl:px-4 py-2 text-sm font-semibold text-blue-900 hover:bg-gray-100 transition-colors whitespace-nowrap"
+                      className="rounded-md px-2.5 xl:px-3 py-2 text-[13px] xl:text-sm font-semibold text-blue-900 hover:bg-gray-100 transition-colors whitespace-nowrap"
                     >
                       {item.label}
                     </button>
                   ) : (
                     <a
                       href={item.href}
-                      className="px-3 xl:px-4 py-2 text-sm font-semibold text-blue-900 hover:bg-gray-100 transition-colors whitespace-nowrap block"
+                      className="block rounded-md px-2.5 xl:px-3 py-2 text-[13px] xl:text-sm font-semibold text-blue-900 hover:bg-gray-100 transition-colors whitespace-nowrap"
                     >
                       {item.label}
                     </a>
@@ -342,7 +342,7 @@ export function Navbar() {
 
           {/* Mobile Navigation Menu */}
           {isOpen && (
-            <div className="md:hidden pb-28 space-y-1 border-t-2 border-blue-900 pt-4 px-4 max-h-[calc(100svh-210px)] overflow-y-auto">
+            <div className="md:hidden pb-8 space-y-1 border-t-2 border-blue-900 pt-4 px-4 max-h-[calc(100svh-170px)] overflow-y-auto">
               {navItems.map((item) => (
                 <div key={item.label}>
                   {item.hasDropdown ? (
@@ -462,23 +462,6 @@ export function Navbar() {
           )}
         </div>
 
-        {/* Mobile Sticky CTA */}
-        <div className="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur border-t border-gray-200 px-3 py-2">
-          <div className="grid grid-cols-2 gap-2">
-            <a
-              href="tel:+254715505526"
-              className="w-full px-3 py-3 bg-red-600 text-white rounded-lg font-bold text-center hover:bg-red-700 transition-colors text-sm"
-            >
-              Call Admissions
-            </a>
-            <a
-              href="/admission/new-applications"
-              className="w-full px-3 py-3 bg-blue-700 text-white rounded-lg font-bold text-center hover:bg-blue-800 transition-colors text-sm"
-            >
-              Apply Online
-            </a>
-          </div>
-        </div>
       </nav>
     </>
   )

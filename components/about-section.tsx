@@ -21,28 +21,28 @@ export function AboutSection() {
   ]
 
   return (
-    <section id="about" className="w-full py-20 md:py-32 bg-white">
+    <section id="about" className="w-full py-20 md:py-28 bg-slate-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center space-y-6 mb-12">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-purple-600 text-balance">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-slate-900 text-balance">
             About FREYJOSE
           </h2>
-          <p className="text-lg text-foreground/70 max-w-2xl mx-auto text-balance">
+          <p className="text-lg text-slate-600 max-w-2xl mx-auto text-balance">
             Committed to delivering quality technical education and professional development since 2015.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           {values.map((item, index) => (
-            <Card key={index} className="p-8 bg-white border-border shadow-sm">
-              <h3 className="text-2xl font-bold text-purple-600 mb-4">{item.title}</h3>
-              {item.description && <p className="text-foreground/70 leading-relaxed mb-4">{item.description}</p>}
+            <Card key={index} className="p-8 bg-white border border-slate-200 shadow-sm">
+              <h3 className="text-2xl font-semibold text-slate-900 mb-4">{item.title}</h3>
+              {item.description && <p className="text-slate-600 leading-relaxed mb-4">{item.description}</p>}
               {item.points && (
                 <div className="space-y-3">
                   {item.points.map((point, i) => (
                     <div key={i} className="flex gap-3 items-start">
-                      <CheckCircle2 className="text-red-600 mt-1 flex-shrink-0" size={20} />
-                      <span className="text-foreground font-medium">{point}</span>
+                      <CheckCircle2 className="text-slate-700 mt-1 flex-shrink-0" size={20} />
+                      <span className="text-slate-800 font-medium">{point}</span>
                     </div>
                   ))}
                 </div>
@@ -52,12 +52,12 @@ export function AboutSection() {
         </div>
 
         {/* CTA Section */}
-        <div className="text-center space-y-6 bg-gradient-to-r from-purple-100 to-pink-100 p-12 rounded-lg">
-          <h3 className="text-2xl font-bold text-purple-600">Ready to Start Your Journey?</h3>
-          <p className="text-lg text-gray-700">Join thousands of students transforming their careers at FREYJOSE</p>
+        <div className="text-center space-y-6 bg-white p-12 rounded-2xl border border-slate-200 shadow-sm">
+          <h3 className="text-2xl font-semibold text-slate-900">Ready to Start Your Journey?</h3>
+          <p className="text-lg text-slate-600">Join thousands of students transforming their careers at FREYJOSE</p>
           <Button
             onClick={() => window.location.href = '/admission/new-applications'}
-            className="px-8 py-4 bg-purple-600 hover:bg-purple-700 text-white font-bold text-lg rounded-lg mx-auto"
+            className="px-8 py-4 bg-slate-900 hover:bg-slate-800 text-white font-semibold text-lg rounded-full mx-auto"
           >
             Apply Now
           </Button>
