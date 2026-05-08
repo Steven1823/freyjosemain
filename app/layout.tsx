@@ -10,9 +10,9 @@ const _geist = Geist({ subsets: ['latin'] })
 const _geistMono = Geist_Mono({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Freyjose Technical College | Skills for School Leavers',
+  title: 'Freyjose Technical College | Apply Today | Skills for School Leavers in Kenya',
   description:
-    'From beauty and ICT to business and hospitality, Freyjose gives school leavers hands-on training for real jobs. Discover your future and explore programmes.',
+    'Apply today to Freyjose Technical College in Ngong, Kenya. Quality vocational training in ICT, Beauty, Business, Driving, and Hospitality. Fast online application process.',
   applicationName: 'FREYJOSE Technical Training College',
   category: 'education',
   referrer: 'origin-when-cross-origin',
@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     telephone: true,
   },
   keywords: [
+    'apply today technical college Kenya',
     'technical college for school leavers Kenya',
     'courses after high school in Kenya',
     'certificate programmes in Ngong',
@@ -29,6 +30,8 @@ export const metadata: Metadata = {
     'hands-on vocational courses Kenya',
     'ICT and business college Ngong',
     'hospitality and beauty training Kenya',
+    'online application form freyjose',
+    'technical college Kajiado',
   ],
   authors: [{ name: 'FREYJOSE Technical Training College' }],
   creator: 'FREYJOSE Technical Training College',
@@ -46,8 +49,8 @@ export const metadata: Metadata = {
     ],
   },
   openGraph: {
-    title: 'Freyjose Technical College | Where Careers Begin',
-    description: 'Discover practical, career-ready programmes at Freyjose Technical College in Ngong. The right next step after high school.',
+    title: 'Freyjose Technical College | Apply Today | Where Careers Begin',
+    description: 'Discover practical, career-ready programmes at Freyjose Technical College in Ngong. Apply today and start your journey.',
     url: 'https://freyjose.ac.ke',
     siteName: 'FREYJOSE Technical Training College',
     type: 'website',

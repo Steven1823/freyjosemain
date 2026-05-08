@@ -138,9 +138,9 @@ export function Navbar() {
           </span>
           <a
             href="/admission/new-applications"
-            className="bg-slate-900 text-white font-medium px-3 py-1 rounded-full text-xs sm:text-sm hover:bg-slate-800 transition-colors shrink-0"
+            className="bg-gradient-to-r from-purple-600 to-purple-700 text-white font-medium px-3 py-1 rounded-lg text-xs sm:text-sm hover:shadow-lg hover:from-purple-700 hover:to-purple-800 transition-all shrink-0"
           >
-            Apply Now
+            Apply Today
           </a>
         </div>
         <div className="w-full">
@@ -279,37 +279,18 @@ export function Navbar() {
             {/* CTA Buttons */}
             <div className="hidden xl:flex items-center gap-2 ml-auto flex-shrink-0">
               <a
-                href="#testimonials"
-                className="px-4 py-2 bg-amber-500 text-white rounded font-semibold hover:bg-amber-600 transition-colors text-sm"
-              >
-                Reviews
-              </a>
-              <a
-                href="tel:+254715505526"
-                className="flex items-center gap-2 px-4 py-2 bg-red-600 text-white rounded font-semibold hover:bg-red-700 transition-colors text-sm"
-              >
-                <Phone size={16} />
-                Call Now
-              </a>
-              <a
                 href="/admission/new-applications"
-                className="px-4 py-2 bg-blue-700 text-white rounded font-semibold hover:bg-blue-800 transition-colors text-sm"
+                className="px-6 py-2 bg-gradient-to-r from-purple-600 to-purple-700 text-white rounded-lg font-semibold hover:shadow-lg hover:from-purple-700 hover:to-purple-800 transition-all text-sm"
               >
-                Apply Now
+                Apply Today
               </a>
-              <Button
-                onClick={() => document.getElementById('admission')?.scrollIntoView({ behavior: 'smooth' })}
-                className="px-4 py-2 bg-purple-600 text-white hover:bg-purple-700 font-semibold rounded text-sm"
-              >
-                Enroll Today
-              </Button>
             </div>
 
             <a
               href="/admission/new-applications"
-              className="ml-auto xl:hidden px-3 py-2 bg-blue-700 text-white rounded font-semibold hover:bg-blue-800 transition-colors text-sm whitespace-nowrap"
+              className="ml-auto xl:hidden px-3 py-2 bg-gradient-to-r from-purple-600 to-purple-700 text-white rounded-lg font-semibold hover:shadow-lg hover:from-purple-700 hover:to-purple-800 transition-all text-sm whitespace-nowrap"
             >
-              Apply Now
+              Apply Today
             </a>
           </div>
 
@@ -453,9 +434,9 @@ export function Navbar() {
                     setIsOpen(false)
                     document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
                   }}
-                  className="w-full bg-purple-600 text-white hover:bg-purple-700 font-bold rounded-lg text-base py-3"
+                  className="w-full bg-gradient-to-r from-purple-600 to-purple-700 text-white hover:shadow-lg hover:from-purple-700 hover:to-purple-800 font-bold rounded-lg text-base py-3 transition-all"
                 >
-                  Apply Now
+                  Apply Today
                 </Button>
               </div>
             </div>

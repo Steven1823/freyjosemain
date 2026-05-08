@@ -35,8 +35,8 @@ export default function NewApplicationsPage() {
       formData.message,
     ].join('\n')
 
-    window.location.href = `mailto:info@freyjose.ac.ke?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
-    alert('Your email app will open now so you can send your application to info@freyjose.ac.ke.')
+    window.location.href = `mailto:freyjosecollege@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+    alert('Your email app will open now so you can send your application to freyjosecollege@gmail.com.')
     setFormData({ name: '', email: '', phone: '', course: '', message: '' })
   }
 
@@ -146,7 +146,7 @@ export default function NewApplicationsPage() {
           <Card className="p-6 md:p-8 bg-gradient-to-br from-white to-purple-50 border-2 border-purple-200 shadow-sm">
             <h2 className="text-2xl md:text-3xl font-bold text-purple-700 mb-2">Quick Application Box</h2>
             <p className="text-gray-600 mb-6">
-              Apply in under 2 minutes. Your application is sent directly to <strong>info@freyjose.ac.ke</strong> by email, not WhatsApp.
+              Apply in under 2 minutes. Your application is sent directly to <strong>freyjosecollege@gmail.com</strong>.
             </p>
             <form onSubmit={handleSubmit} className="space-y-5">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
