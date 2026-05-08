@@ -1,4 +1,10 @@
-import { initOpenNextCloudflareForDev } from '@opennextjs/cloudflare'
+// Only import Cloudflare helpers in development/local environments
+let initOpenNextCloudflareForDev
+
+if (process.env.NODE_ENV !== 'production') {
+  const cloudflareModule = await import('@opennextjs/cloudflare')
+  initOpenNextCloudflareForDev = cloudflareModule.initOpenNextCloudflareForDev
+}
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -26,6 +32,10 @@ const nextConfig = {
   },
 }
 
-initOpenNextCloudflareForDev()
+if (initOpenNextCloudflareForDev) {
+  initOpenNextCloudflareForDev()
+}
+
+export default nextConfig
 
 export default nextConfig
