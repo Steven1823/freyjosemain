@@ -37,5 +37,3 @@ if (initOpenNextCloudflareForDev) {
 }
 
 export default nextConfig
-
-export default nextConfig
