@@ -1,5 +1,3 @@
-import { initOpenNextCloudflareForDev } from '@opennextjs/cloudflare'
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   poweredByHeader: false,
@@ -36,10 +34,6 @@ const nextConfig = {
       },
     ],
   },
-}
-
-if (process.env.NODE_ENV !== 'production') {
-  initOpenNextCloudflareForDev()
 }
 
 export default nextConfig
