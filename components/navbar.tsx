@@ -72,10 +72,10 @@ export function Navbar() {
   ]
 
   const topQuickLinks = [
-    { label: 'Student Portal', href: '#' },
-    { label: 'Staff Portal', href: '#' },
-    { label: 'E-Learning', href: '#' },
-    { label: 'E-Revision', href: '#' },
+    { label: 'Student Portal', href: '/student-portal' },
+    { label: 'Staff Portal', href: '/student-portal' },
+    { label: 'E-Learning', href: '/student-portal' },
+    { label: 'E-Revision', href: '/student-portal' },
   ]
 
   const topSocialLinks = [
